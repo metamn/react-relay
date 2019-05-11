@@ -16,3 +16,4 @@
 
 - Required: https://facebook.github.io/relay/docs/en/prerequisites
 - Installation: https://graphql.github.io/graphql-js/running-an-express-graphql-server/
+- Smooth
