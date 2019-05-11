@@ -5,7 +5,7 @@
 - An Express GraphQL server serving a single static 'Hello world' query
 - a `schema.graphql` to make the things work, otherwise all is wired up in the server
 - an `environment.js` with `fetchQuery()` which works well (any query, CORS solved)
-- the `App` runnung a `QueryRenderer`
+- the `App` running a `QueryRenderer`
 
 ## Run
 
