@@ -1,6 +1,7 @@
 // From: https://graphql.github.io/graphql-js/running-an-express-graphql-server/
 //
 var express = require("express");
+var cors = require("cors");
 var graphqlHTTP = require("express-graphql");
 var { buildSchema } = require("graphql");
 
@@ -20,6 +21,7 @@ var root = {
 
 // The server serves the GraphQL requests
 var app = express();
+app.use(cors());
 app.use(
   "/graphql",
   graphqlHTTP({
