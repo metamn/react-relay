@@ -3,9 +3,40 @@
 ## What's inside
 
 - An Express GraphQL server serving a single static 'Hello world' query
-- a `schema.graphql` to make the things work, otherwise all is wired up in the server
+- a `schema.graphql` to make the things work, otherwise all is wired up in the server (this file is not really used)
 - an `environment.js` with `fetchQuery()` which works well (any query, CORS solved)
 - the `App` running a `QueryRenderer`
+
+## What's needed
+
+- a proper backend which is _very_ complicated to set up
+- contenders / examples / approaches are:
+
+### Official `relay-examples/todo`
+
+- Express GraphQL server
+- Node web server
+- Clean packages
+- Messy folder structure (not following React Creat App)
+
+### Unofficial `relay-todomvc`
+
+- Local filesystem database / GraphQL
+- Webpack web server
+- Messy packages (routing, etc)
+- Clean folders (following React Create App)
+
+### `relay-modern-typescript`
+
+- From a React core member https://sibelius.github.io
+- Lots of other _best practices_ like colocation, useQuery hook
+- However the code is very messy and uses typescript
+
+### Official AWS AppSync Relay
+
+- pretty clean packages and setup
+- follows React Create App
+- the best contender so far
 
 ## Run
 
